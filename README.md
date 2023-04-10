@@ -21,7 +21,7 @@ Should the LLM be unable to provide an answer, it will utilize the Google Search
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/idea-to-proof-of-concept.git
+git clone https://github.com/ibiscp/LLM-IMDB.git
 
 ```
 
