@@ -1,0 +1,236 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #4b0082;
+}
+
+.App {
+  text-align: center;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.chat-box {
+  width: 80%;
+  max-width: 1200px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.message {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.message-bot {
+  text-align: left;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  max-width: 75%; /* Set a maximum width */
+  word-wrap: break-word; /* Enable word wrapping */
+}
+
+.message-user {
+  text-align: right;
+  background-color: #4b0082;
+  color: white;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  max-width: 75%; /* Set a maximum width */
+  word-wrap: break-word; /* Enable word wrapping */
+}
+
+.message-bot-container,
+.message-user-container {
+  display: flex;
+  width: 100%;
+}
+
+.message-bot-container {
+  justify-content: flex-start;
+}
+
+.message-user-container {
+  justify-content: flex-end;
+}
+
+
+
+
+.input-container {
+  display: flex;
+}
+
+.input {
+  flex-grow: 1;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 6px;
+}
+
+.send-button {
+  background-color: #4b0082;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.send-button[disabled] {
+  cursor: default;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.user {
+  font-weight: bold;
+  color: #4b0082;
+}
+
+.message-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-cards-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  justify-content: center;
+}
+
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.movie-top-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.movie-card h4 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.movie-card p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.movie-cover-container {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+
+.movie-details {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-cover {
+  max-height: 100%;
+  max-width: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.watch-now-button {
+  background-color: indigo;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.synopsis {
+  font-size: 14px;
+  margin: 10px 0;
+  text-align: justify;
+}
+
+.genre {
+  font-size: 14px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.toggle-thought-button {
+  color: indigo;
+  cursor: pointer;
+  border: 0px;
+  background-color: transparent;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.thought-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thought-modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 80%;
+  width: 800px;
+  text-align: left;
+}
+
+.thought-icon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.close-modal-button {
+  background-color: indigo;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}

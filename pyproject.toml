@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "llm-imdb"
+version = "0.1.0"
+description = "Proof of concept app using LangChain and LLMs to retrieve information from graphs, built with the IMDB dataset"
+authors = ["Ibis Prevedello <ibiscp@gmail.com>"]
+readme = "README.md"
+packages = [{include = "llm_imdb"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.0.0"
+langchain = "^0.0.136"
+networkx = "^3.1"
+fastapi = "^0.95.0"
+rich = "^13.3.3"
+openai = "^0.27.4"
+google-search-results = "^2.4.2"
+uvicorn = "^0.21.1"
+setuptools = "^67.6.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+ipykernel = "^6.21.2"
+mypy = "^1.1.1"
+ruff = "^0.0.254"
+httpx = "^0.23.3"
+pytest = "^7.2.2"
+types-requests = "^2.28.11"
+requests = "^2.28.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
